@@ -1,2 +1,26 @@
-<h1>Categories#new</h1>
-<p>Find me in app/views/categories/new.html.erb</p>
+<div class="category-form">
+<header class="header-category">
+<nav class="nav-list">
+<%= link_to user_categories_path(current_user) do %>
+  <i class="fas fa-less-than"></i>
+  <% end %>
+<h1> New Category</h1>
+<i class="fas fa-search"></i>
+</nav>
+</header>
+
+<div class="category-name-icon">
+<%= form_with(model: @category, url: user_categories_path) do |form| %>
+    <div class="form">
+   
+  <div class="input-name-icon">
+    <%= form.text_field :name, class: "name-field", placeholder: "Name" %>
+    <%= form.text_field :icon, class: "icon-field", placeholder: "Icon"  %>
+  </div>
+  <div class="category-button">
+    <p><%= form.submit "Save", class: "save-category" %></p>
+  </div>
+  </div>
+<% end %>
+<div>
+</div>

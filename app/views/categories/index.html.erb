@@ -1,2 +1,29 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<header class="header-category">
+  <nav class="nav-list">
+    <i class="fas fa-bars"></i>
+    <h1 class="h1-categories">Categories</h1>
+    <i class="fas fa-search"></i>
+  </nav>
+</header>
+
+<section class="category-container">
+  <% if @categories.empty? %>
+    <p>There are no categories for the budget</p>
+  <% else %>
+    <% @categories.each do |category| %>
+      <article class="article-list">
+        <%= link_to user_payment_path(current_user.id, category.id) do %>
+          <div class="icon-name-sum">
+            <div class="icon"><%=image_tag(category.icon, :alt => "category icon.", :class => "category-icon") %></div>
+            <div class="name"><%= category.name %></div>
+            <div class="sum"><span class="">$<%= @category_sums[category.id] %></span></div>
+          </div>
+        <% end %>
+      </article>
+    <% end %>
+  <% end %>
+
+  <div class="category-button">
+    <%= link_to "Add a new Category", new_user_category_path(current_user), class: "insert-category" %>
+  </div>
+</section>
