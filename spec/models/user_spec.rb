@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe User, type: :Model do
   let(:user) do
-    User.new(name: 'Dee', 
-    email: 'dee12@gmail.com', 
-    password: 'dbk123', 
-    confirmed_at: Time.now)
+    User.new(name: 'Dee',
+             email: 'dee12@gmail.com',
+             password: 'dbk123',
+             confirmed_at: Time.now)
   end
   before { user.save }
 

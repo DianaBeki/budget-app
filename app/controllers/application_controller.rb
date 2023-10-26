@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class ApplicationController < ActionController::Base
   # Set up user authentication
   before_action :authenticate_user!, unless: :welcome_index_url

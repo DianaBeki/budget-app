@@ -13,9 +13,9 @@
  *= require_tree .
  *= require_self
  */
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,7 +47,7 @@ body {
 .button-control {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   padding-top: 13rem;
   width: 100%;
 }
@@ -68,22 +68,24 @@ body {
 }
 
 .header-category,
- .header-pay, 
-.register-header, 
+.header-pay,
+.register-header,
 .header-login {
   background-color: #377bc2;
   padding: 2rem;
 }
 
-.nav-list, .register-nav {
- display: flex;
- align-items: center;
- justify-content: space-between;
- color: #fff;
- font-size: 2rem;
+.nav-list,
+.register-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 2rem;
 }
 
-.category-container, .payments-area {
+.category-container,
+.payments-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,12 +93,14 @@ body {
   width: 100%;
 }
 
-.article-list, .pay-article {
+.article-list,
+.pay-article {
   width: 90%;
   padding-bottom: 2rem;
 }
 
-.icon-name-sum, .payment-made {
+.icon-name-sum,
+.payment-made {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,15 +143,16 @@ body {
   font-size: 1.3rem;
   line-height: 30px;
   border: 1.1px solid #fff;
-  padding: .4rem 9rem;
+  padding: 0.4rem 9rem;
 }
 
-.input-name-icon, .input-name-amount {
+.input-name-icon,
+.input-name-amount {
   padding-bottom: 1rem;
 }
 
-.name-field, 
-.icon-field, 
+.name-field,
+.icon-field,
 .amount-field,
 .input-details,
 .email-field,
@@ -159,15 +164,15 @@ body {
   font-size: 1rem;
 }
 
-
-.recent-ancient, .dot {
+.recent-ancient,
+.dot {
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
   align-items: center;
   font-size: 1.2rem;
   color: #fff;
-  margin-top: .7rem;
+  margin-top: 0.7rem;
 }
 
 .another-class {
@@ -181,12 +186,13 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 1rem .6rem;
-  margin-bottom: .6rem;
+  padding: 1rem 0.6rem;
+  margin-bottom: 0.6rem;
   width: 100%;
 }
 
-.up p, .up h3 {
+.up p,
+.up h3 {
   font-size: 23px;
   color: #434b54;
 }
@@ -244,7 +250,8 @@ body {
   background-color: #fff;
 }
 
-.transaction-btn, .save-btn {
+.transaction-btn,
+.save-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,15 +289,14 @@ body {
   padding: 1.5rem 7rem;
 }
 
-
 .icon-register-next {
   color: #fff;
   font-size: 1.5rem;
 }
 
 .user-pic {
-margin-top: 1rem;
-background-color: #fff;
+  margin-top: 1rem;
+  background-color: #fff;
 }
 
 .pic-upload {
@@ -303,18 +309,19 @@ background-color: #fff;
 }
 
 .fa-user {
-background-color: #434b54;
-color: #fff;
-padding: .7rem;
-border-radius: 50%;
-font-size: 1.2rem;
+  background-color: #434b54;
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
 }
 
 .upload {
   font-size: 1.2rem;
 }
 
-.register, .next {
+.register,
+.next {
   margin-left: 2rem;
 }
 
@@ -346,7 +353,6 @@ font-size: 1.2rem;
   font-size: 1.3rem;
 }
 
-
 .center-password {
   text-align: center;
   color: #434b54;
@@ -358,18 +364,17 @@ font-size: 1.2rem;
   display: none;
 }
 
-.passwords, .resend {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 1rem;
-background-color: #377bc2;
-color: #fff;
-
+.passwords,
+.resend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #377bc2;
+  color: #fff;
 }
 
 .h2-hidden {
   font-size: 1.2rem;
 }
-

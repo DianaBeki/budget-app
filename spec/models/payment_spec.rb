@@ -17,13 +17,13 @@ RSpec.describe Category, type: :model do
     expect(payment).to_not be_valid
   end
 
-  it 'amount attribute should be a number' do 
-  payment.amount = 'shey'
-  expect(payment).to_not be_valid
+  it 'amount attribute should be a number' do
+    payment.amount = 'shey'
+    expect(payment).to_not be_valid
   end
 
-  it 'should include name attribute length of 2 characters or greater than' do 
-  payment.name = 'b'
-  expect(payment).to_not be_valid
+  it 'should include name attribute length of 2 characters or greater than' do
+    payment.name = 'b'
+    expect(payment).to_not be_valid
   end
 end

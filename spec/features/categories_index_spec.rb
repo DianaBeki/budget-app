@@ -4,10 +4,10 @@ RSpec.describe 'category#index', type: :feature do
   before(:each) do
     @user1 = User.create(
       id: 2,
-      name: 'Dee', 
+      name: 'Dee',
       email: 'dee12@gmail.com',
-       password: 'dbk123',
-        confirmed_at: Time.now
+      password: 'dbk123',
+      confirmed_at: Time.now
     )
 
     login_as(@user1, scope: :user)
@@ -31,21 +31,21 @@ RSpec.describe 'category#index', type: :feature do
   end
 
   describe '#Indexpage' do
-  it 'can see the category name.' do
-    @categories.each do |category|
-      expect(page).to have_content(category.name)
+    it 'can see the category name.' do
+      @categories.each do |category|
+        expect(page).to have_content(category.name)
+      end
+    end
+
+    it 'can see the category icon.' do
+      @categories.each do |category|
+        expect(page).to have_css("img[src='#{category.icon}']")
+      end
+    end
+
+    it 'redirects to the new category form when clicking "Add a new Category"' do
+      click_link 'Add a new Category'
+      expect(page).to have_current_path(new_user_category_path(@user1.id))
     end
   end
-
-  it 'can see the category icon.' do
-    @categories.each do |category|
-      expect(page).to have_css("img[src='#{category.icon}']")
-    end
-  end
-
-  it 'redirects to the new category form when clicking "Add a new Category"' do
-    click_link 'Add a new Category'
-    expect(page).to have_current_path(new_user_category_path(@user1.id))
-  end
-end
 end
