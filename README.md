@@ -57,9 +57,9 @@ Budget App is an expenses management app created using Ruby on Rails. It allows 
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo">https://expenses-app-584x.onrender.com</a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- This is 'Budget-app'<a href="Live Demo Link</a>
+- This is 'Budget-app'<a href="https://expenses-app-584x.onrender.com"</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
