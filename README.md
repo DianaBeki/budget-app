@@ -67,7 +67,7 @@ Budget App is an expenses management app created using Ruby on Rails. It allows 
 
 <!-- Presentation Video -->
 
-- This is 'Budget-app presentation'<a href="">Presentation Video</a>
+- This is 'Budget-app presentation'<a href="https://www.loom.com/share/249878cd0d4243fcb938726136c37e5a?sid=5b0b65b7-0fb3-4fbb-bdf0-152ae5757dfb">Presentation Video</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

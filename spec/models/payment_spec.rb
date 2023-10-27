@@ -1,11 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Category, type: :model do
-  let(:user) { User.new(name: 'Dee', email: 'dee12@gmail.com', password: 'dbk123', confirmed_at: Time.now) }
-  before { user.save }
-
+RSpec.describe Payment, type: :model do
   let(:payment) { Payment.new(name: 'Josh', amount: 10) }
-  before { payment.save }
 
   it 'should include a name attribute' do
     payment.name = nil

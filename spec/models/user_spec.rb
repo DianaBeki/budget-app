@@ -1,11 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :Model do
+RSpec.describe User, type: :model do
   let(:user) do
     User.new(name: 'Dee',
              email: 'dee12@gmail.com',
-             password: 'dbk123',
-             confirmed_at: Time.now)
+             password: 'dbk123')
   end
   before { user.save }
 
@@ -19,8 +18,8 @@ RSpec.describe User, type: :Model do
     expect(user).to_not be_valid
   end
 
-  it 'name should be 40 characters and less' do
-    user.name = 'ds' * 30
+  it 'name should be 40 characters or less' do
+    user.name = 'd' * 41
     expect(user).to_not be_valid
   end
 end

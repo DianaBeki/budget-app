@@ -6,8 +6,7 @@ RSpec.describe 'category#index', type: :feature do
       id: 2,
       name: 'Dee',
       email: 'dee12@gmail.com',
-      password: 'dbk123',
-      confirmed_at: Time.now
+      password: 'dbk123'
     )
 
     login_as(@user1, scope: :user)
